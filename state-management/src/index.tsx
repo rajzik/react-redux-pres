@@ -1,12 +1,25 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import { render } from 'react-dom';
+import { providers, renderWithProvider } from './helpers';
+import { Todo } from './types';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const initialState = {
+  todos: [
+    new Todo('Statemanagement with SetState'),
+    new Todo('Statemanagement with React.Context'),
+    new Todo('Statemanagement with Unstated'),
+    //new Todo("Statemanagement with MobX"),
+    new Todo('Statemanagement with Redux'),
+    new Todo('Statemanagement with Redux Thunk'),
+    new Todo('Statemanagement with Apollo Link State'),
+  ],
+};
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+render(
+  renderWithProvider(providers.StateTodoList, initialState),
+  // renderWithProvider(providers.ContextTodoList, initialState),
+  // renderWithProvider(providers.UnstatedTodoList, initialState),
+  //renderWithProvider(providers.ReduxTodoList, initialState),
+  // renderWithProvider(providers.ReduxThunkTodoList, initialState),
+  //renderWithProvider(providers.ApolloLinkStateTodoList, initialState),
+  document.getElementById('root')
+);

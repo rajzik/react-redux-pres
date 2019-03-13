@@ -32,4 +32,4 @@ export function create<T>(entityArray: T[], item: T & Object) {
   return [...entityArray, item];
 }
 
-export { initialState, mountWithInitialProps, providers, renderWithProvider } from './mountHelpers';
+export { mountWithInitialProps, providers, renderWithProvider } from './mountHelpers';

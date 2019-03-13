@@ -44,14 +44,16 @@
 - Changes via side effects
 - Data layer separation
 
-### REACT CONTEXT/USE REDUCER
-
 ### REDUX
 
 - WHAT IS REDUX?
 - [TYPESAFE ACTIONS](https://github.com/piotrwitek/typesafe-actions)
 - [REACT REDUX TYPESCRIPT](https://github.com/piotrwitek/react-redux-typescript-guide)
 - DO WE NEED REDUX ANYMORE?
+
+### REACT CONTEXT/USE REDUCER
+
+- Many things from [REDUX](#REDUX)
 
 ### APOLLO
 
