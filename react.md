@@ -75,4 +75,17 @@
 - Follow structure
 - Immutable everything
 
+## ANTI-PATTERN
+
 ## EXAMPLES
+
+## FIN
+
+- [https://www.sitepoint.com/react-architecture-best-practices/](https://www.sitepoint.com/react-architecture-best-practices/)
+- [Clean code](https://americanexpress.io/clean-code-dirty-code/)
+- [air-bnb](https://github.com/airbnb/javascript/tree/master/react)
+
+## Some mentions
+
+- https://wallabyjs.com/
+- https://github.com/palmerhq/the-platform
