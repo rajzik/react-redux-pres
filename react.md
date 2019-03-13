@@ -2,6 +2,8 @@
 
 ## TYPESCRIPT
 
+- Why type check?
+- Super set of javascript
 - [ULTIMATE GUIDE](https://basarat.gitbooks.io/typescript/content/docs/getting-started.html)
 
 ## REACT
@@ -35,8 +37,8 @@
 - [CONCURRENT REACT](https://www.youtube.com/watch?v=ByBPyMBTzM0)
   - Suspense
   - Lazy
-- [REACT-CACHE](https://github.com/facebook/react/tree/master/packages/react-cache)
-- [SCHEDULER](https://github.com/facebook/react/tree/master/packages/scheduler)
+  - [REACT-CACHE](https://github.com/facebook/react/tree/master/packages/react-cache)
+  - [SCHEDULER](https://github.com/facebook/react/tree/master/packages/scheduler)
 
 ## STATE MANAGEMENT
 
@@ -57,6 +59,20 @@
 
 ### APOLLO
 
+- GraphQl State management
+- Graph access
+
+### OTHERS
+
+> Code examples `./state-management`
+
 ## BEST PRACTICE
 
 - Make it strict
+- Make it simple
+- [Design doc](https://medium.freecodecamp.org/how-to-write-a-good-software-design-document-66fcf019569c)
+- Make own components API
+- Follow structure
+- Immutable everything
+
+## EXAMPLES
