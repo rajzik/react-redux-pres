@@ -1,0 +1,9 @@
+filepath: 'src/**/*.ts*'
+semi: true
+singleQuote: true
+trailingComma: 'es5'
+printWidth: 100
+jsxBracketSameLine: false
+parser: 'typescript'
+arrowParens: 'always'
+endOfLine: 'lf'

@@ -1,0 +1,95 @@
+{
+  "extends": [
+    "tslint-immutable",
+    "tslint:recommended",
+    "tslint-react",
+    "tslint-microsoft-contrib/recommended",
+    "tslint-config-prettier"
+  ],
+  "jsRules": {
+    "no-console": {
+      "severity": "warning",
+      "options": [
+        "log",
+        "warn",
+        "assert",
+        "clear",
+        "group",
+        "groupCollapsed",
+        "groupEnd",
+        "info",
+        "table",
+        "time",
+        "trace",
+        "error"
+      ]
+    },
+    "max-line-length": {
+      "options": [
+        100
+      ]
+    },
+    "object-literal-sort-keys": false
+  },
+  "rules": {
+    "semicolon": true,
+    "use-simple-attributes": {
+      "severity": "warning"
+    },
+    "only-arrow-functions": false, // Redundant
+    "react-this-binding-issue": false, // Redundant
+    "react-a11y-no-onchange": false, // This shouldn't be problem
+    "react-a11y-role-has-required-aria-props": false, // Error with react
+    "function-name": [
+      true,
+      {
+        "method-regex": "^[a-z][\\w\\d]+$",
+        "private-method-regex": "^[a-z][\\w\\d]+$",
+        "protected-method-regex": "^[a-z][\\w\\d]+$",
+        "static-method-regex": "^[A-Z][\\w\\d]+$",
+        "function-regex": "^[\\w\\d]+$"
+      }
+    ],
+    "react-a11y-event-has-role": {
+      "severity": "warning",
+      "options": [
+        true
+      ]
+    },
+    "prefer-for-of": false,
+    "no-var-keyword": true,
+    "no-parameter-reassignment": true,
+    "no-loop-statement": {
+      "severity": "warning",
+      "options": [
+        true
+      ]
+    },
+    "cyclomatic-complexity": {
+      "severity": "error",
+      "options": [
+        11
+      ]
+    },
+    "no-http-string": false,
+    "curly": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": false,
+    "no-relative-imports": false,
+    "prefer-object-spread": true,
+    "max-classes-per-file": {
+      "severity": "warning",
+      "options": [
+        1
+      ]
+    },
+    "no-suspicious-comment": {
+      "severity": "warning"
+    },
+    "import-name": false,
+    "member-access": false,
+    "match-default-export-name": false,
+    "export-name": false,
+    "no-backbone-get-set-outside-model": false
+  }
+}
