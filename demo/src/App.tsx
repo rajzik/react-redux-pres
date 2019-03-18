@@ -1,16 +1,20 @@
+import './App.css';
+
 import React, { Suspense } from 'react';
 import { Provider } from 'react-redux';
-import './App.css';
+
+import { Loader, Router, StrictMode } from './components';
 import store from './stores';
-import { Router, Loader } from './components';
 
 function App() {
 	return (
-		<Provider store={store}>
-			<Suspense fallback={<Loader />}>
-				<Router />
-			</Suspense>
-		</Provider>
+		<StrictMode>
+			<Provider store={store}>
+				<Suspense fallback={<Loader />}>
+					<Router />
+				</Suspense>
+			</Provider>
+		</StrictMode>
 	);
 }
 
