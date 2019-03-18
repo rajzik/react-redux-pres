@@ -1,9 +1,10 @@
-import { createStandardAction, createAsyncAction } from 'typesafe-actions';
+import { createAsyncAction, createStandardAction } from 'typesafe-actions';
+
 import { getRandomNumber } from '../../helpers';
 import { ITodo } from '../../types/redux';
 
 export const addTodo = createStandardAction('ADD_TODO').map(
-	({ title }: { title: string }): { payload: ITodo } => ({
+	(title: string): { payload: ITodo } => ({
 		payload: {
 			title,
 			id: getRandomNumber(),
