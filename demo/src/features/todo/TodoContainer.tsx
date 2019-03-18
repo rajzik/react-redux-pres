@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 
 import { todoActions, todoSelectors } from '../../stores';
@@ -19,14 +19,9 @@ const dispatchProps = {
 export type Props = ReturnType<typeof mapStateToProps> & typeof dispatchProps;
 
 function TodoContainer({ isLoading, todos, removeTodo, addTodo }: Props) {
-	const [updated, changeUpdated] = useState(1);
-	useEffect(() => {
-		changeUpdated(updated + 1);
-	}, [todos]);
-
 	return (
 		<>
-			<AddTodo addItem={addTodo} key={updated} />
+			<AddTodo addItem={addTodo} />
 			<TodoList isLoading={isLoading} todos={todos} removeTodo={removeTodo} />
 		</>
 	);

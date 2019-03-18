@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import { curryFunction, curryInputEvent } from '../../helpers';
+import { curryFunction, curryInputEvent, multiFunction } from '../../helpers';
 
 interface IProps {
 	addItem: (title: string) => void;
@@ -12,7 +12,9 @@ export default function AddTodo({ addItem }: IProps) {
 	return (
 		<div>
 			<input type="text" value={currentValue} onChange={curryInputEvent(changeValue)} />
-			<button onClick={curryFunction(addItem, currentValue)}>Add todo</button>
+			<button onClick={multiFunction(curryFunction(addItem, currentValue), curryFunction(changeValue, ''))}>
+				Add todo
+			</button>
 		</div>
 	);
 }
