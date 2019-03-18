@@ -1,13 +1,15 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { Provider } from 'react-redux';
 import './App.css';
 import store from './stores';
-import { Main } from './pages';
+import { Router, Loader } from './components';
 
 function App() {
 	return (
 		<Provider store={store}>
-			<Main />
+			<Suspense fallback={<Loader />}>
+				<Router />
+			</Suspense>
 		</Provider>
 	);
 }
